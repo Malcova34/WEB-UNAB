@@ -1,0 +1,260 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Estilos de la barra de navegación */
+.custom-navbar {
+    background-color: #ffff; /* Color de fondo deseado */
+    border-bottom: 2px solid #ff9900;
+
+}
+.custom-button {
+    background-color: #ff9900; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+}
+
+.custom-button:hover {
+    background-color: #e68a00; /* Color de fondo al pasar el mouse */
+    color: white; /* Asegúrate de que el texto siga siendo blanco */
+}
+
+.custom-button:focus, .custom-button:active {
+    background-color: #ff9900; /* Color de fondo al hacer clic o al enfocar */
+    color: white; /* Asegúrate de que el texto siga siendo blanco */
+    box-shadow: none; /* Opcional: elimina la sombra de enfoque */
+}
+
+.form-control {
+    border: 2px solid #ff9900; /* Borde del campo de búsqueda */
+}
+
+.form-control:focus {
+    border-color: #ff9900; /* Borde del campo al enfocar */
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.5); /* Sombra de enfoque */
+}
+
+.header-button {
+    color: #1E1E1E; /* Color del texto más oscuro */
+    font-size: 1.1rem; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Texto en negrita */
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.navbar {
+    padding: auto; /* Ajusta el padding de la navbar si es necesario */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Asegura que las opciones del menú se alineen a la derecha */
+}
+
+.nav-link {
+    margin-right: 15px; /* Espaciado entre los elementos de la navegación */
+}
+
+.form-control {
+    width: 200px; /* Ajusta el ancho de la barra de búsqueda según sea necesario */
+}
+
+.c-item {
+    height: 380px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    position: relative;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+.c-img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin perder proporciones */
+    filter: brightness(0.5);
+}
+
+
+/* Contenedor del perfil */
+.profile-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Para que el botón de editar pueda posicionarse relativo a este contenedor */
+    border: 2px solid #e68a00;
+}
+
+/* Posicionar el botón de editar en la parte superior derecha */
+.edit-profile-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    background-color: #ff9900;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.edit-profile-btn:hover {
+    background-color: #e68a00;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px; /* Mayor espacio entre la foto y el nombre */
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ff9900;
+    margin-bottom: 20px; /* Espacio extra debajo de la foto */
+}
+
+/* Ajustar el tamaño de los textos */
+.bio {
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Estadísticas del perfil */
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #eee;
+}
+
+.stat:last-child {
+    border-right: none;
+    /* Eliminar el borde derecho del último elemento */
+}
+
+.stat h3 {
+    margin: 0;
+    font-size: 17px; /* Reducir el tamaño de la fuente de los títulos */
+    color: #ff9900;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.stat p {
+    font-size: 16px; /* Reducir el tamaño de los números */
+    font-weight: bold;
+}
+
+/* Ajustar los estilos del nombre y carrera */
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-career {
+    font-size: 16px; /* Reducir el tamaño de la fuente de la carrera */
+    color: #007bff;
+    margin-top: 5px;
+}
+
+/* Tablas */
+h2 {
+    color: #FF8000;
+    text-align: center;
+}
+
+.compliance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #FFFBF2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.compliance .icon {
+    color: #FFD700;
+    font-size: 1.2em;
+}
+
+.main-table, .free-hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.main-table th, .main-table td, .free-hours-table th, .free-hours-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.main-table thead, .free-hours-table thead {
+    background-color: #FF8000;
+    color: white;
+}
+
+.completed {
+    color: green;
+}
+
+.not-completed {
+    color: red;
+}
+
+.pdf-icon {
+    font-size: 1.2em;
+    color: #FF8000;
+}
+
+.free-hours-table .total-row td {
+    font-weight: bold;
+    background-color: #FFF2CC;
+    color: #333;
+}
+
+/* Estilo para el botón de Cerrar sesión */
+#logoutButton {
+    background: none;         /* Elimina el fondo */
+    border: none;             /* Elimina el borde */
+    color: #dc3545;           /* Color rojo para el texto */
+    font-size: 16px;          /* Ajusta el tamaño de la fuente */
+    padding: 10px 20px;       /* Agrega espacio alrededor del texto */
+    text-align: left;         /* Alinea el texto a la izquierda */
+    width: 100%;              /* Hace que el botón ocupe todo el ancho del menú */
+    cursor: pointer;         /* Muestra el cursor como puntero */
+}
+
+#logoutButton:hover {
+    background-color: #f8d7da; /* Agrega un fondo suave cuando el usuario pase el mouse por encima */
+    color: #721c24;              /* Cambia el color del texto a un tono más oscuro cuando se pasa el mouse */
+}
+
+.dropdown-menu {
+    min-width: 200px;           /* Asegura que el menú tenga un tamaño adecuado */
+}
+
+.dropdown-item {
+    padding: 8px 20px;          /* Ajusta el relleno para los ítems del menú */
+    font-size: 14px;            /* Ajusta el tamaño de la fuente de los ítems */
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Color de fondo cuando se pasa el mouse sobre un ítem */
+    color: #ff9900;             /* Cambia el color del texto a azul al hacer hover */
+}

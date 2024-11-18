@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+  <!-- Header barra navegacion -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../../web_unab/home/home.html">
+        <img src="logonavbar.png" alt="Bootstrap" width="250" height="80">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item header-button ">
+            <a class="nav-link" href="../../../web_unab/pages/horarios/horarios.html">Horarios</a>
+          </li>
+          <li class="nav-item header-button">
+            <a class="nav-link" href="../../../web_unab/pages/notas/notas.html">Notas</a>
+          </li>
+          <li class="nav-item dropdown header-button">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Actividades
+            </a>
+            <ul class="dropdown-menu header-button">
+              <li><a class="dropdown-item header-button" href="../../../web_unab/pages/eventos/eventos.html">Eventos</a>
+              </li>
+              <li><a class="dropdown-item header-button"
+                  href="../../../web_unab/pages/noticias/noticias.html">Noticias</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><button class="dropdown-item text-danger" id="logoutButton">Cerrar sesión</button></li>
+            </ul>
+          </li>
+          <li class="nav-item header-button">
+            <a class="nav-link" href="../../../web_unab/pages/contacto/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item header-button">
+            <a class="nav-link" href="../../../web_unab/pages/perfil/perfil.html">
+              <i class="fas fa-user-circle fa-lg"></i> <!-- Ícono de perfil -->
+            </a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn custom-button" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+
+  <section class="contact-section">
+    <h1>Contáctanos</h1>
+    <p class="contact-description">Si requieres contactarnos puedes hacer uso de nuestros canales de atención:</p>
+
+    <div class="contact-info ">
+      <div class="contact-item ">
+        <img src="auricular.png" alt="Centro de contacto">
+        <p class="contact-label">Centro de contacto:</p>
+        <p>018000127395</p>
+      </div>
+      <div class="contact-item">
+        <img src="correo.png" alt="Correo institucional">
+        <p class="contact-label">Correo institucional:</p>
+        <p>contactenos@unab.edu.co</p>
+      </div>
+      <div class="contact-item">
+        <button class="pqrsf-button">PQRFS</button>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <div class="map-container">
+      <!-- Inserta aquí el código de Google Maps o un iframe -->
+      <iframe
+        src="//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15836.314740588481!2d-73.1052063!3d7.1168802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fe3d972e479%3A0xf4d24fabc68b8c!2sUniversidad%20Aut%C3%B3noma%20de%20Bucaramanga%20-%20UNAB!5e0!3m2!1ses-419!2sco!4v1730858089934!5m2!1ses-419!2sco"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <img src="../../logonavbar.png" alt="Bootstrap" width="250" height="80"> </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Universidad Unab</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary"
+            href="https://www.linkedin.com/school/universidad-autonoma-de-bucaramanga/posts/?feedView=all"><i
+              class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/unab_online/?hl=es"><i
+              class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/unab.online"><i
+              class="bi bi-facebook" style="font-size: 1.5rem;"></i></a></li>
+    </footer>
+  </div>
+
+  <script src="../../logout.js"></script>
+</body>
+
+</html>

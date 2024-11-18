@@ -1,0 +1,185 @@
+.custom-navbar {
+    background-color: #ffff; /* Color de fondo deseado */
+    border-bottom: 2px solid #ff9900;
+
+}
+.custom-button {
+    background-color: #ff9900; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+}
+
+.custom-button:hover {
+    background-color: #e68a00; /* Color de fondo al pasar el mouse */
+    color: white; /* Asegúrate de que el texto siga siendo blanco */
+}
+
+.custom-button:focus, .custom-button:active {
+    background-color: #ff9900; /* Color de fondo al hacer clic o al enfocar */
+    color: white; /* Asegúrate de que el texto siga siendo blanco */
+    box-shadow: none; /* Opcional: elimina la sombra de enfoque */
+}
+
+.form-control {
+    border: 2px solid #ff9900; /* Borde del campo de búsqueda */
+}
+
+.form-control:focus {
+    border-color: #ff9900; /* Borde del campo al enfocar */
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.5); /* Sombra de enfoque */
+}
+
+.header-button {
+    color: #1E1E1E; /* Color del texto más oscuro */
+    font-size: 1.1rem; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Texto en negrita */
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.navbar {
+    padding: auto; /* Ajusta el padding de la navbar si es necesario */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Asegura que las opciones del menú se alineen a la derecha */
+}
+
+.nav-link {
+    margin-right: 15px; /* Espaciado entre los elementos de la navegación */
+}
+
+.form-control {
+    width: 200px; /* Ajusta el ancho de la barra de búsqueda según sea necesario */
+}
+
+.c-item {
+    height: 380px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    position: relative;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+.c-img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin perder proporciones */
+    filter: brightness(0.5);
+}
+
+/* Estilo para el botón de Cerrar sesión */
+#logoutButton {
+    background: none;         /* Elimina el fondo */
+    border: none;             /* Elimina el borde */
+    color: #dc3545;           /* Color rojo para el texto */
+    font-size: 16px;          /* Ajusta el tamaño de la fuente */
+    padding: 10px 20px;       /* Agrega espacio alrededor del texto */
+    text-align: left;         /* Alinea el texto a la izquierda */
+    width: 100%;              /* Hace que el botón ocupe todo el ancho del menú */
+    cursor: pointer;         /* Muestra el cursor como puntero */
+}
+
+#logoutButton:hover {
+    background-color: #f8d7da; /* Agrega un fondo suave cuando el usuario pase el mouse por encima */
+    color: #721c24;              /* Cambia el color del texto a un tono más oscuro cuando se pasa el mouse */
+}
+
+.dropdown-menu {
+    min-width: 200px;           /* Asegura que el menú tenga un tamaño adecuado */
+}
+
+.dropdown-item {
+    padding: 8px 20px;          /* Ajusta el relleno para los ítems del menú */
+    font-size: 14px;            /* Ajusta el tamaño de la fuente de los ítems */
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Color de fondo cuando se pasa el mouse sobre un ítem */
+    color: #ff9900;             /* Cambia el color del texto a azul al hacer hover */
+}
+
+/* Cards eventos */
+/* Contenedor principal para las cards */
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+    gap: 40px; /* Espacio entre las tarjetas */
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Estilo de la card */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen de la card */
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Contenido de la card */
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Título de la card */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Texto de la card */
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Botón de registro */
+.register-btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .cards-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-wrapper {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+}
+

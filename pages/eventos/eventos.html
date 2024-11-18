@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="eventosstyles.css">
+</head>
+
+<body>
+    <!-- Header barra navegacion -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../web_unab/home/home.html">
+                <img src="../../logonavbar.png" alt="Bootstrap" width="250" height="80">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item header-button ">
+                        <a class="nav-link" href="../../../web_unab/pages/horarios/horarios.html">Horarios</a>
+                    </li>
+                    <li class="nav-item header-button">
+                        <a class="nav-link" href="../../../web_unab/pages/notas/notas.html">Notas</a>
+                    </li>
+                    <li class="nav-item dropdown header-button">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Actividades
+                        </a>
+                        <ul class="dropdown-menu header-button">
+                            <li><a class="dropdown-item header-button"
+                                    href="../../../web_unab/pages/eventos/eventos.html">Eventos</a>
+                            </li>
+                            <li><a class="dropdown-item header-button"
+                                    href="../../../web_unab/pages/noticias/noticias.html">Noticias</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><button class="dropdown-item text-danger" id="logoutButton">Cerrar sesión</button></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item header-button">
+                        <a class="nav-link" href="../../../web_unab/pages/contacto/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item header-button">
+                        <a class="nav-link" href="../../../web_unab/pages/perfil/perfil.html">
+                            <i class="fas fa-user-circle fa-lg"></i> <!-- Ícono de perfil -->
+                        </a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn custom-button" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cards-wrapper">
+        <div class="card">
+            <img src="../../pages/eventos/images/image1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">30 años de Psicología</h5>
+                <p class="card-text">Celebración del 30 aniversario de la facultad de Psicología, donde estudiantes y profesores se reunieron para conmemorar los logros alcanzados a lo largo de los años.</p>
+                <button class="register-btn">Registrarse</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="../../pages/eventos/images/image2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">CienTón 2024</h5>
+                <p class="card-text">Evento que reúne a estudiantes y académicos en una competencia científica que busca resolver problemas de la vida real en un ambiente colaborativo y de aprendizaje.</p>
+                <button class="register-btn">Registrarse</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="../../pages/eventos/images/image3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Concurso Halloween</h5>
+                <p class="card-text">Concurso de disfraces y actividades creativas para celebrar Halloween, promoviendo el espíritu de integración y creatividad entre los estudiantes.</p>
+                <button class="register-btn">Registrarse</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../pages/eventos/images/image3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Congreso Internacional de Economía y Negocios</h5>
+                <p class="card-text">Encuentro académico con expertos internacionales que discuten las últimas tendencias y desafíos en el mundo de los negocios y la economía.</p>
+                <button class="register-btn">Registrarse</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../pages/eventos/images/image5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">UNAB Tec</h5>
+                <p class="card-text">Feria que destaca el trabajo de los estudiantes de tecnología en diversas áreas, mostrando sus proyectos innovadores y soluciones prácticas.</p>
+                <button class="register-btn">Registrarse</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../pages/eventos/images/image6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Semana de la Ingeniería</h5>
+                <p class="card-text">Evento que exhibe proyectos de ingeniería desarrollados por los estudiantes, brindándoles un espacio para compartir sus investigaciones e innovaciones.</p>
+                <button class="register-btn">Registrarse</button>
+            </div>
+        </div>
+
+      
+
+    </div>
+    
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <img src="../../logonavbar.png" alt="Bootstrap" width="250" height="80"> </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Universidad Unab</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary"
+                        href="https://www.linkedin.com/school/universidad-autonoma-de-bucaramanga/posts/?feedView=all"><i
+                            class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/unab_online/?hl=es"><i
+                            class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/unab.online"><i
+                            class="bi bi-facebook" style="font-size: 1.5rem;"></i></a></li>
+        </footer>
+    </div>
+
+    <script src="../../logout.js"></script>
+</body>
+
+</html>
